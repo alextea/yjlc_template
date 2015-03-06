@@ -18,12 +18,10 @@
 $is-print: false !default;
 
 @mixin _core-font-generator($font-size: 19px, $font-size-640: 16px, $font-size-print: 14pt, $line-height: (25 / 19), $line-height-640: (20 / 16), $tabular-numbers: false, $font-weight: 400) {
-  @if $tabular-numbers == true {
-    font-family: $NTA-Light-Tabular;
-  } @else if $is-print {
+  @if $is-print {
     font-family: $Print-reset;
   } @else {
-    font-family: $NTA-Light;
+    font-family: $Lato;
   }
   @if $is-print == false {
     font-size: $font-size;
