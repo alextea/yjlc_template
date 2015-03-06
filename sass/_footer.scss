@@ -1,0 +1,14 @@
+/* Global footer */
+
+#footer {
+  border-top: 1px solid $yjlc-blue;
+
+  .footer-wrapper {
+    @include outer-block;
+    padding-top: 20px;
+    @include media(tablet) {
+      padding-top: 60px;
+    }
+    margin: 0 auto;
+  }
+}
