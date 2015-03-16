@@ -2,6 +2,9 @@
 
 // Brand colours
 $yjlc-blue: #34485E;
+$yjlc-light-blue: #3973B0;
+$yjlc-highlight: #F0AC2C;
+$yjlc-grey: #66727E;
 
 // Standard palette, colours
 $purple: #2e358b;
@@ -48,28 +51,25 @@ $light-blue-50: #96c6e2;
 $light-blue-25: #d5e8f3;
 
 // Standard palette, greys
-$black: #0b0c0c;
-$grey-1: #6f777b;
+$black: #0E1319;
+$grey-1: #66727E;
 $grey-2: #bfc1c3;
 $grey-3: #dee0e2;
 $grey-4: #f8f8f8;
 $white: #fff;
 
 // Semantic colour names
-$link-colour: $yjlc-blue;
-$link-active-colour: #2e8aca;
-$link-hover-colour: #2e8aca;
-$link-visited-colour: #4c2c92;
-$button-colour: #00823b;
+$link-colour: $yjlc-light-blue;
+$link-active-colour: $yjlc-light-blue;
+$link-hover-colour: $yjlc-blue;
+$link-visited-colour: $yjlc-light-blue;
+$button-colour: $yjlc-light-blue;
 $text-colour: $black;             // Standard text colour
-$secondary-text-colour: $grey-1;  // Section headers, help text etc.
+$secondary-text-colour: $yjlc-grey;  // Section headers, help text etc.
 $border-colour: $grey-2;          // Borders, seperators, rules, keylines etc.
 $panel-colour: $grey-3;           // Related links panel, page footer etc.
 $canvas-colour: $grey-4;          // Page background
 $highlight-colour: $grey-4;       // Table stripes etc.
 $page-colour: $white;             // The page
-$alpha-colour: $pink;             // Alpha badges and banners
-$beta-colour: $orange;            // Beta badges and banners
-$banner-text-colour: #000;        // Text colour for Alpha & Beta banners
 $error-colour: $mellow-red;       // Error text and border colour
-$error-background: #fef7f7;       // Error background colour
+$error-background: $white;       // Error background colour
