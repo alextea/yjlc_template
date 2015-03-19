@@ -1,5 +1,9 @@
 // Headings
 
+h1 {
+  @include bold-36();
+  color: $yjlc-blue;
+}
 
 h2 {
   @include bold-24();
@@ -25,4 +29,9 @@ h3 {
     margin-top: em(20, 19);
   }
 
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 30px;
 }

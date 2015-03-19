@@ -1,0 +1,52 @@
+.article {
+  header {
+    padding: 60px 0 30px;
+  }
+
+  .intro {
+    @include core-24();
+  }
+
+  .navigation {
+    list-style: none;
+  }
+
+  .glossaryLink {
+    border-bottom: 1px dotted $yjlc-grey;
+  }
+
+  ol.footnote {
+    @include core-16();
+    color: $yjlc-grey;
+    padding-left: none;
+    list-style: none;
+
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+sup {
+  line-height: 1;
+  display: inline-block;
+  bottom: 1ex;
+
+  font-size: 75%;
+  height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sidebar {
+  padding-top: 60px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .sidebar-links {
+    list-style: none;
+  }
+}
+

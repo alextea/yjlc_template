@@ -1,14 +1,38 @@
 /* Global footer */
 
 #footer {
-  border-top: 1px solid $yjlc-blue;
+  border-top: 1px solid $yjlc-light-blue;
+  background-color: $panel-colour;
 
   .footer-wrapper {
     @include outer-block;
     padding-top: 20px;
     @include media(tablet) {
       padding-top: 60px;
+      padding-bottom: 60px;
     }
     margin: 0 auto;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0 0 $gutter 0;
+    @extend %contain-floats;
+
+    li {
+      float: left;
+      margin-right: 20px;
+
+      color: $yjlc-light-blue;
+      @include core-19;
+    }
+  }
+
+  .get-advice {
+    @include core-19;
+  }
+
+  .acknowledgement {
+    font-weight: bold;
   }
 }

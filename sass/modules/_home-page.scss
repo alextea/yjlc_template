@@ -21,3 +21,17 @@
     padding: 0 ($gutter/3) 0 0;
   }
 }
+
+.homepage-topic {
+  background-color: $yjlc-light-blue;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  color: $white;
+
+  h3 {
+    a {
+      color: $white;
+    }
+  }
+}
