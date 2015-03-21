@@ -1,6 +1,13 @@
 .homepage {
+  h2 {
+    @include heading-36();
+    font-weight: bold;
+  }
+
   .strap-line {
-    @include heading-24();
+    h2 {
+      margin-top: $gutter;
+    }
   }
 
   .large-search {
@@ -43,13 +50,13 @@
         &:hover {
           background-color: $yjlc-blue;
         }
+
+        &:focus {
+          outline: none;
+          @include box-shadow(0 0 0 3px $focus-colour);
+        }
       }
     }
-  }
-
-  h2 {
-    @include heading-36();
-    font-weight: bold;
   }
 
   .homepage-topic {
@@ -60,7 +67,6 @@
     @include media(tablet) {
       margin-left: 0;
     }
-
 
     h3 {
       @include core-24();
@@ -75,5 +81,10 @@
         }
       }
     }
+  }
+
+  .homepage-section {
+    border-bottom: 1px solid $yjlc-pink;
+    padding-bottom: $gutter;
   }
 }
