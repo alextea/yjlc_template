@@ -2,16 +2,19 @@
 
 #footer {
   border-top: 1px solid $yjlc-light-blue;
-  background-color: $panel-colour;
+  background-color: $yjlc-light-grey;
 
   .footer-wrapper {
-    @include outer-block;
+    @extend %site-width-container;
+    @extend %contain-floats;
+
     padding-top: 20px;
+    padding-bottom: 40px;
+
     @include media(tablet) {
       padding-top: 60px;
       padding-bottom: 60px;
     }
-    margin: 0 auto;
   }
 
   .footer-links {
@@ -23,16 +26,20 @@
       float: left;
       margin-right: 20px;
 
-      color: $yjlc-light-blue;
       @include core-19;
-    }
-  }
 
-  .get-advice {
-    @include core-19;
+      a {
+        color: $white;
+      }
+    }
   }
 
   .acknowledgement {
     font-weight: bold;
+    color: $white;
+
+    a {
+      color: $white;
+    }
   }
 }
