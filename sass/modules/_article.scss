@@ -9,6 +9,10 @@
 
   .navigation {
     list-style: none;
+
+    li {
+      padding-bottom: $gutter-half;
+    }
   }
 
   .glossaryLink {
@@ -18,7 +22,7 @@
   ol.footnote {
     @include core-16();
     color: $yjlc-grey;
-    padding-left: none;
+    padding-left: 0;
     list-style: none;
 
     li {
@@ -42,11 +46,20 @@ sup {
   padding-top: 60px;
 
   h3 {
+    @include heading-24();
+    font-weight: bold;
     margin-top: 0;
+
+    color: $yjlc-blue;
   }
 
   .sidebar-links {
     list-style: none;
+
+    li {
+      border-bottom: 1px solid $yjlc-light-grey;
+      padding: $gutter-one-third 0;
+    }
   }
 }
 
