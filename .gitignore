@@ -1,7 +1,6 @@
 .sass-cache
 .sass-cache/*
-stylesheets
-stylesheets/*
+*.css.map
 
 .DS_Store
 .AppleDouble
