@@ -52,7 +52,7 @@ $is-print: false !default;
   @include _core-font-generator($font-size, $font-size-640, $font-size-print, $line-height, $line-height-640, $tabular-numbers, $font-weight);
 }
 
-@mixin core-36($line-height: (40 / 36), $line-height-640: (25 / 24), $tabular-numbers: false, $font-weight: 400) {
+@mixin core-36($line-height: (40 / 36), $line-height-640: (28 / 24), $tabular-numbers: false, $font-weight: 400) {
   $font-size: 36px;
   $font-size-640: 24px;
   $font-size-print: 18pt;
