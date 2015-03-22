@@ -2,6 +2,11 @@
   h2 {
     @include heading-36();
     font-weight: bold;
+
+    a {
+      color: $yjlc-blue;
+      text-decoration: none;
+    }
   }
 
   .strap-line {
@@ -81,10 +86,5 @@
         }
       }
     }
-  }
-
-  .homepage-section {
-    border-bottom: 1px solid $yjlc-pink;
-    padding-bottom: $gutter;
   }
 }
