@@ -1,0 +1,39 @@
+.a-z-list {
+  list-style: none;
+  @extend %contain-floats;
+
+  li {
+    @include core-16;
+
+    float: left;
+    
+    width: 2em;
+    height: 2em;
+
+    padding: 0.2em;
+
+    margin: 0 ($gutter/3) 0 0;
+
+    @include core-24();
+
+    a {
+      display: block;
+      width: 100%;
+      line-height: 2em;
+      color: $white;
+      background-color: $yjlc-pink;
+      @include border-radius(50%);
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $yjlc-blue;
+      }
+
+      &:focus {
+        outline: none;
+        @include box-shadow(0 0 0 3px $focus-colour);
+      }
+    }
+  }
+}
