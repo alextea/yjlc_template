@@ -28,7 +28,7 @@ if ( have_posts() ) :
 
     <?php the_content(); ?>
   </article>
-
+</div>
 <?php 
   endwhile;
 endif;

@@ -45,6 +45,7 @@ if ( have_posts() ) :
     ?>
     </ul>
   </div>
+</div>
 <?php 
   endwhile;
 endif;

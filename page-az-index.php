@@ -60,6 +60,6 @@ get_header(); ?>
     aToZindex($myposts, 'Z');
     ?>                
   </article>
-
+</div>
 <?php
 get_footer();
