@@ -31,33 +31,11 @@ get_header(); ?>
     $args = array( 'posts_per_page' => 1000, 'orderby' => 'title', 'order' => 'ASC', 'category_name' => 'a-z' );
     
     $myposts = get_posts( $args );
-        
-    aToZindex($myposts, 'A');
-    aToZindex($myposts, 'B');
-    aToZindex($myposts, 'C');
-    aToZindex($myposts, 'D');
-    aToZindex($myposts, 'E');
-    aToZindex($myposts, 'F');
-    aToZindex($myposts, 'G');
-    aToZindex($myposts, 'H');
-    aToZindex($myposts, 'I');
-    aToZindex($myposts, 'J');
-    aToZindex($myposts, 'K');
-    aToZindex($myposts, 'L');
-    aToZindex($myposts, 'M');
-    aToZindex($myposts, 'N');
-    aToZindex($myposts, 'O');
-    aToZindex($myposts, 'P');
-    aToZindex($myposts, 'Q');
-    aToZindex($myposts, 'R');
-    aToZindex($myposts, 'S');
-    aToZindex($myposts, 'T');
-    aToZindex($myposts, 'U');
-    aToZindex($myposts, 'V');
-    aToZindex($myposts, 'W');
-    aToZindex($myposts, 'X');
-    aToZindex($myposts, 'Y');
-    aToZindex($myposts, 'Z');
+
+    foreach (range('A', 'Z') as $i) {
+        aToZindex($myposts, $i);
+    }
+
     ?>                
   </article>
 </div>
