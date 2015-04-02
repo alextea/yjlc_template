@@ -54,33 +54,36 @@ get_header();
 </div>
 
 <?php
-query_posts( 'category_name=landing-pages' );
+$topics = get_pages( 'child_of=2484' );
 
-if ( have_posts() ) :
+if ( count($topics) > 0 ) :
 ?>
 <div class="homepage-section">
 <h2><a href-"#">Topics</a></h2>
 
 <?php
+$i = 0;
 // Start the Loop.
-while ( have_posts() ) : the_post();
+foreach($topics as $topic) :
 
-if ($wp_query->current_post % 2 == 0) :
+if ($i % 2 == 0) :
 ?>
 <div class="grid-row">
 <?php
 endif;
 ?>
 <div class="homepage-topic">
-<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-
-<?php the_excerpt(); ?>
+  <h3><a href="<?php echo get_page_link( $topic->ID ); ?>"><?php echo $topic->post_title; ?></a></h3>
+  <?php 
+    $content = apply_filters( 'the_content', $topic->post_content );
+    echo $content; ?>
 </div>
 
-<?php if ($wp_query->current_post % 2 == 0) : ?></div><?php endif; ?>
+<?php if ($i % 2 == 1) : ?></div><?php endif; ?>
 
 <?
-endwhile;
+$i++;
+endforeach;
 endif;
 ?>
 </div>
