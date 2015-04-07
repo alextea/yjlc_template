@@ -14,7 +14,7 @@
   <title><?php wp_title( '|', true, 'right' ); ?></title>
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    
+
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
   <!--[if gt IE 8]>
@@ -32,8 +32,19 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
   <?php wp_head(); ?>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58325836-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,9 +70,9 @@
           </a>
         </div>
 
-        <?php 
-          wp_nav_menu( array( 
-            'theme_location' => 'main_menu', 
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'main_menu',
             'menu_class' => 'main-menu' )
            );
         ?>
