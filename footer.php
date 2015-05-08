@@ -25,13 +25,11 @@
         </div>
         
         <div class="text">
-          <p class="acknowledgement">The Youth Justice Legal Centre is brought to you by <a href="#">Just for Kids Law</a>. Thanks to our funders Esmée Fairbairn Foundation, Mark Leonard Trust, Legal Education Foundation, Network for Social Change.</p>
-
-          <p>The content of this website represents the interpretation of the law in England and Wales by the Youth Justice Legal Centre. YJLC aims to be legally accurate, it should not replace independent legal advice. YJLC cannot take responsibility for the accuracy of external websites.</p>
-
-          <p>Youth Justice Legal Centre, 180 North Gower Street, London NW1 2NB</p>
-          
-          <p>&copy;Youth Justice Legal Centre 2015. All rights reserved.</p>
+          <?php 
+            $pageID = 1516;
+            $page = get_page($pageID);
+            echo($page->post_content);
+          ?>
         </div>
       </div>
     </footer>
