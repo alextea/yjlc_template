@@ -15,11 +15,12 @@
       <div class="footer-wrapper">
         <div class="grid-row">
           <div class="column-two-thirds">
-            <ul class="footer-links">
-              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Contact</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>terms">Terms</a></li>
-            </ul>
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'footer_menu',
+                'menu_class' => 'footer-links' )
+              );
+            ?>
           </div>
         </div>
         
