@@ -54,7 +54,7 @@ main {
 // Spacing is set in em, using the px to em function in the elements _helpers.scss file
 
 // Headings
-.heading-xlarge {
+@mixin heading-xlarge() {
   @include bold-48();
 
   margin-top: em(15, 32);
@@ -74,7 +74,7 @@ main {
 
 }
 
-.heading-large {
+@mixin heading-large() {
   @include bold-36();
 
   margin-top: em(25, 24);
@@ -94,7 +94,7 @@ main {
 
 }
 
-.heading-medium {
+@mixin heading-medium() {
   @include bold-24();
 
   margin-top: em(25, 20);
@@ -107,7 +107,7 @@ main {
 
 }
 
-.heading-small {
+@mixin heading-small() {
   @include bold-19();
 
   margin-top: em(10, 16);

@@ -1,10 +1,32 @@
 .article {
   header {
     padding: 60px 0 30px;
+
+    h1 {
+      @include heading-large;
+      margin-top: 0;
+
+      @include media(tablet) {
+        margin-top: 0;
+      }
+    }
+
+    .date {
+      @include heading-medium;
+      font-weight: normal;
+      color: $secondary-text-colour;
+
+      margin: 0;
+
+      @include media(tablet) {
+        margin: 0;
+      }
+    }
   }
 
   .intro {
     @include core-24();
+    margin-bottom: ($gutter * 2);
   }
 
   .navigation {
@@ -42,12 +64,15 @@ sup {
   vertical-align: baseline;
 }
 
+.post-meta {
+  margin: $gutter 0;
+}
+
 .sidebar {
   padding-top: 60px;
 
   h3 {
-    @include heading-24();
-    font-weight: bold;
+    @include heading-medium();
     margin-top: 0;
 
     color: $yjlc-blue;
