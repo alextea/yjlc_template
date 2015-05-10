@@ -37,7 +37,7 @@ if ( have_posts() ) :
     <?php 
       $topic_category = get_post_meta( $post->ID, 'category_slug', true );
 
-      $args = array( 'orderby' => 'title', 'order' => 'ASC', 'category_name' => $topic_category );
+      $args = array( 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC', 'category_name' => $topic_category );
     
       $topic_posts = get_posts( $args );
 
