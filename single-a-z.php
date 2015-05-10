@@ -34,16 +34,18 @@ if ( have_posts() ) :
     global $related; 
     $rel = $related->show(get_the_ID(), true);
     //print_r($rel);
-    if(is_array($rel)){
-      ?><h3>Related Posts</h3><?php
-    }
-    ?><ul class="sidebar-links"><?php
+    if(is_array($rel) && count( $rel ) > 0) :
+  ?>
+    <h3>Related Posts</h3>
+      <ul class="sidebar-links">
+  <?php
     foreach ($rel as $r) :
       //print_r($r);
       echo '<li><a href="'.get_permalink($r->ID).'">'.$r->post_title.'</a></li>';
     endforeach;
     ?>
     </ul>
+  <?php endif; ?>
   </div>
 </div>
 <?php 
