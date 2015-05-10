@@ -1,0 +1,10 @@
+.post-extract {
+  margin-bottom: ($gutter * 2);
+
+  h3.date {
+    color: $secondary-text-colour;
+    font-weight: normal;
+
+    margin-bottom: $gutter;
+  }
+}
